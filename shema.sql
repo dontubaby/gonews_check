@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS articles;
+CREATE TABLE articles (
+  id BIGSERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  pubtime BIGINT,
+  link TEXT NOT NULL UNIQUE 
+);
